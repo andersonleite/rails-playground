@@ -4,4 +4,5 @@ Rails.application.routes.draw do
     get 'header' => 'headers#show'
     resources :blog
   end
+  get 'feed', to: 'newsfeed#index'
 end
